@@ -55,8 +55,8 @@ export default function App() {
   //CASE 2: There is no post available
   if (!post) return(<div>
     <h1>Nothing to show right now...</h1>
-    <button onClick={createNewPost}>Create Post</button>
-    <button onClick={updatePost}>Update Post</button>
+    <button className='create-post' onClick={createNewPost}>Create Post</button>
+      <button className='update-post' onClick={updatePost}>Update Post</button>
   </div>);
   //CASE 3: There is a post to show 
   return (

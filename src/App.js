@@ -51,7 +51,7 @@ export default function App() {
 
   //HANDLE RESPONSES
   //CASE 1: Error
-  if (error) return `Error: ${error.message}`;
+  if (error) return `Error: ${error.message}, Error Status: ${error.response.status}`;
   //CASE 2: There is no post available
   if (!post) return(<div>
     <h1>Nothing to show right now...</h1>
